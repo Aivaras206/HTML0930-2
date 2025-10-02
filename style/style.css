@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-form {
+    display: flex;
+    align-items: center;
+    background: #00000066;
+    backdrop-filter: blur (6px);
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.flex-form input[type="search"],
+.flex-form input[type="date"],
+.flex-form select {
+    border: none;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #000000;
+    outline: none;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+
+.flex-form label {
+    margin: 0 5px;
+    color: #fff;
+    /* balti, kad matytųsi ant fono */
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.flex-form input[type="submit"] {
+    border: none;
+    background: #ff5a5f;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background .2s ease;
+}
+.flex-form input[type="submit"]:hover {
+  background: #e14c50;
+}
