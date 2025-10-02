@@ -70,16 +70,10 @@ html {
     margin: 5px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background .2s ease;
+   transition: background .2s ease;
 }
 
 .flex-form input[type="submit"]:hover {
     background: #e14c50;
 }
 
-@media (max-width: 800px) {
-    .flex-form {
-        flex-direction: column;
-        align-items: stretch;
-    }
-}
